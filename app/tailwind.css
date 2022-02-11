@@ -493,6 +493,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
