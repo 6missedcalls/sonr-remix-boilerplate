@@ -11,7 +11,14 @@ export default function Index() {
     <Hero />
       <CTA />
       <Box as="section" maxW="5xl" mx="auto" py="12" px={{ base: '6', md: '8' }}>
-        <SimpleGrid columns={{ base: 1, md: 2 }} spacingX="10" spacingY={{ base: '8', md: '14' }}>
+        <SimpleGrid columns={[1, 1, 2]} spacing={8}>
+          <GridItem>
+            <Feature
+              icon={<FcDoughnutChart />}
+              title="Analytics"
+            > Test </Feature>
+          </GridItem>
+          <GridItem>
           <Feature title="Secure by default" icon={<FcPrivacy />}>
             At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
             takimata sanctus.
@@ -28,7 +35,8 @@ export default function Index() {
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
             invidunt ut labore.
           </Feature>
-        </SimpleGrid>
+          </GridItem>
+          </SimpleGrid>
       </Box>
     <Footer />
     </>
