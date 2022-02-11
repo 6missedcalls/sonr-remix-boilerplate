@@ -16,9 +16,9 @@ import styles from "./tailwind.css";
 /* meta & SEO lives here */
 export const meta: MetaFunction = () => {
   return {
-    title: "Sonr Highway SDK",
+    title: "Sonr Name Registration",
     description:
-      "The Highway SDK helps you build and run DApps on the Sonr network.",
+      "Sonr Name Registration is a decentralized name registration service that allows you to register your own name.",
   };
 };
 

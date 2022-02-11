@@ -13,10 +13,14 @@ export default function Index() {
       <Box as="section" maxW="5xl" mx="auto" py="12" px={{ base: '6', md: '8' }}>
         <SimpleGrid columns={[1, 1, 2]} spacing={8}>
           <GridItem>
-            <Feature
-              icon={<FcDoughnutChart />}
-              title="Analytics"
-            > Test </Feature>
+            <Center>
+              <Heading as="h2" size="xl" fontWeight="extrabold" lineHeight="1.2">
+                .SNR
+                <Box as="span" ml="2" color="gray.500">
+                  Get your Sonr Registry Name
+                </Box>
+              </Heading>
+            </Center>
           </GridItem>
           <GridItem>
           <Feature title="Secure by default" icon={<FcPrivacy />}>
@@ -38,7 +42,7 @@ export default function Index() {
           </GridItem>
           </SimpleGrid>
       </Box>
-    <Footer />
+      <Footer />
     </>
   );
 }

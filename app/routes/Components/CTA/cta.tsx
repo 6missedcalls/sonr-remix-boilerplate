@@ -10,7 +10,6 @@ export const CTA = () => {
     py="12"
     position="relative"
     h={{ base: '560px', md: '640px' }}
-    // create a gradient
     backgroundImage="linear-gradient(to bottom, #369FFF, #369FFF, 50%, #0061FF 100%)"
     bgSize="cover"
     bgPosition="center"
@@ -22,7 +21,7 @@ export const CTA = () => {
       bg: 'white.700',
       position: 'absolute',
       inset: 0,
-      zIndex: 0,
+      zIndex: 1,
     }}
     >
       <Box
@@ -61,14 +60,14 @@ export const CTA = () => {
           mx="auto"
         >
           <Button
-            as="a"
-            href="#"
-            size="md"
-            h="16"
-            colorScheme="blue"
-            fontWeight="bold"
-            flex={{ md: '1' }}
-          >
+              as="a"
+              href="#"
+              size="lg"
+              colorScheme="blue"
+              px="8"
+              fontWeight="bold"
+              zIndex={2}
+            >
             Go to App
           </Button>
         </Stack>

@@ -1,15 +1,13 @@
-import { Box, Text, SimpleGrid, Center, LightMode, Heading, Button } from '@chakra-ui/react'
+import { Box, Text, SimpleGrid, Center, DarkMode, Heading, Button } from '@chakra-ui/react'
 export const Hero = () => {
 return(
     <Box
         as="section"
-        bg="gray.800"
         py="12"
         position="relative"
         h={{ base: '560px', md: '640px' }}
-        // create a gradient
         backgroundImage="linear-gradient(to bottom, #369FFF, #369FFF, 50%, #0061FF 100%)"
-        bgSize="cover"
+        bgSize="fill"
         bgPosition="center"
         _after={{
           content: `""`,
@@ -34,14 +32,22 @@ return(
             <Heading size="2xl" fontWeight="extrabold">
               Sonr.io 
             </Heading>
-            <Text fontSize="lg" fontWeight="medium" mt="3">
+            <Text fontSize="lg" fontWeight="medium" mt="3" p={4}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod
             </Text>
-            <LightMode>
-              <Button colorScheme="blue" size="lg" mt="6" fontWeight="bold" fontSize="md">
-                Register your .SNR
+            <DarkMode>
+              <Button
+                  as="a"
+                  href="#"
+                  size="lg"
+                  colorScheme="blue"
+                  px="8"
+                  fontWeight="bold"
+                  fontSize="md"
+                >
+                Register .SNR Name
               </Button>
-            </LightMode>
+            </DarkMode>
           </Center>
         </Box>
         <Box
@@ -51,7 +57,7 @@ return(
           w="full"
           bottom="0"
           py="4"
-          bg="blackAlpha.400"
+          bg="white.400"
         >
           <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto">
             <SimpleGrid columns={{ base: 1, md: 3 }}>
