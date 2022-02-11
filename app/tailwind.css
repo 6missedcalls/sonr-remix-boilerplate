@@ -468,6 +468,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
 .m-4 {
   margin: 1rem;
 }
@@ -493,12 +509,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: block;
 }
 
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
 
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .overflow-hidden {
@@ -512,11 +548,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-sonrSecondary {
   --tw-bg-opacity: 1;
   background-color: rgb(54 159 255 / var(--tw-bg-opacity));
-}
-
-.bg-sonrBlue {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 97 255 / var(--tw-bg-opacity));
 }
 
 .p-4 {
@@ -593,10 +624,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(54 159 255 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(17 17 24 / var(--tw-text-opacity));
+}
+
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.outline {
+  outline-style: solid;
 }
 
 .hover\:text-sonrSecondary:hover {
@@ -604,25 +644,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(54 159 255 / var(--tw-text-opacity));
 }
 
-.hover\:underline:hover {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-}
-
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
   }
 
-  .md\:max-h-full {
-    max-height: 100%;
-  }
-
-  .md\:max-w-2xl {
-    max-width: 42rem;
-  }
-
-  .md\:max-w-7xl {
-    max-width: 80rem;
+  .md\:max-w-3xl {
+    max-width: 48rem;
   }
 }

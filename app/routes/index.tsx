@@ -1,18 +1,36 @@
-import { Center, Button } from "@chakra-ui/react";
+import { Box, Button, Center, Heading, LightMode, SimpleGrid, Text, Container, Grid, GridItem, } from '@chakra-ui/react'
+import { FcDoughnutChart, FcMultipleDevices, FcPrivacy, FcTimeline } from 'react-icons/fc'
+import { Hero } from './components/Hero/hero'
+import { CTA } from "./Components/CTA/cta";
+import { Feature } from "./Components/Features/Features";
+import { Footer } from './Components/Footer/Footer';
 
 export default function Index() {
   return (
-    <div className="max-w-md mx-auto bg-sonrBlue rounded-xl shadow-md overflow-hidden md:max-w-7xl md:max-h-full">
-      <div className="md:flex flex-col">
-        <div className="p-8">
-          <div className="uppercase tracking-wide text-3xl text-center text-snowWhite font-semibold">SONR Highway SDK</div>
-            <a href="#" className="block mt-1 text-lg text-center leading-tight font-medium text-snowWhite hover:text-sonrSecondary">SONR Documentation</a>
-            <p className="mt-2 text-center text-snowWhite">We built the batteries attached Blockahin, Network, and Wallet.</p>
-            <Center>
-            <Button className="mt-4 text-center text-sonrSecondary" colorScheme='gray' size='md'> Get Started </Button>
-            </Center>
-          </div>
-      </div>
-    </div>
+  <>
+    <Hero />
+      <CTA />
+      <Box as="section" maxW="5xl" mx="auto" py="12" px={{ base: '6', md: '8' }}>
+        <SimpleGrid columns={{ base: 1, md: 2 }} spacingX="10" spacingY={{ base: '8', md: '14' }}>
+          <Feature title="Secure by default" icon={<FcPrivacy />}>
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+            takimata sanctus.
+          </Feature>
+          <Feature title="Always up to date" icon={<FcTimeline />}>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore.
+          </Feature>
+          <Feature title="Incredible statistics" icon={<FcDoughnutChart />}>
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+            takimata sanctus.
+          </Feature>
+          <Feature title="Support for multiple devices" icon={<FcMultipleDevices />}>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore.
+          </Feature>
+        </SimpleGrid>
+      </Box>
+    <Footer />
+    </>
   );
 }
