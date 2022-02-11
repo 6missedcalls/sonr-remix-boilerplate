@@ -63,11 +63,11 @@ return(
             <SimpleGrid columns={{ base: 1, md: 3 }}>
               <Box textAlign="center" color="white">
                 <Text>.SNR Names Registered</Text>
-                <Text animation="from:0, to:100" fontSize="3xl"> 0 </Text>
+                <Text fontSize="3xl"> 111 </Text>
               </Box>
               <Box textAlign="center" color="white">
                 <Text>Transactions</Text>
-                <Text fontSize="3xl"> 0 </Text>
+                <Text fontSize="3xl"> 444,444,444 </Text>
               </Box>
               <Box textAlign="center" color="white">
                 <Text>Most Recent Registry</Text>
