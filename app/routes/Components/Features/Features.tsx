@@ -10,6 +10,15 @@ interface FeatureProps {
 export const Feature = (props: FeatureProps) => {
   const { title, children, icon } = props
   return (
+    <Box
+      as="section"
+      bg={mode('white', 'gray.800')}
+      px={{ base: '6', md: '8' }}
+      py={{ base: '6', md: '8' }}
+      rounded="lg"
+      shadow="md"
+      mb="8"
+    >
     <Stack spacing={{ base: '3', md: '6' }} direction={{ base: 'column', md: 'row' }}>
       <Box fontSize="6xl">{icon}</Box>
       <Stack spacing="1">
@@ -19,5 +28,6 @@ export const Feature = (props: FeatureProps) => {
         <Box color={mode('gray.600', 'gray.400')}>{children}</Box>
       </Stack>
     </Stack>
+    </Box>
   )
 }

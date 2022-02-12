@@ -1,17 +1,13 @@
 import { Box, Button, Heading, Stack, Text, useColorModeValue } from '@chakra-ui/react'
-import { FcDoughnutChart, FcMultipleDevices, FcPrivacy, FcTimeline } from 'react-icons/fc'
-
-
 export const CTA = () => {
   return (
     <Box
     as="section"
     bg="gray.800"
-    py="12"
-    position="relative"
-    h={{ base: '560px', md: '640px' }}
+    py="28"
+    h="100vh"
     backgroundImage="linear-gradient(to bottom, #369FFF, #369FFF, 50%, #0061FF 100%)"
-    bgSize="cover"
+    bgSize="fill"
     bgPosition="center"
     _after={{
       content: `""`,
@@ -22,6 +18,7 @@ export const CTA = () => {
       position: 'absolute',
       inset: 0,
       zIndex: 1,
+      p: '24px',
     }}
     >
       <Box
