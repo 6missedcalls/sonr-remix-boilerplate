@@ -1,52 +1,19 @@
-import { Box, Button, Center, Heading, LightMode, SimpleGrid, Text, Container, Grid, GridItem, } from '@chakra-ui/react'
-import { FcDoughnutChart, FcMultipleDevices, FcPrivacy, FcTimeline } from 'react-icons/fc'
-import { Hero } from './components/Hero/hero'
-import { CTA } from "./Components/CTA/cta";
-import { Feature } from "./Components/Features/Features";
-import { Footer } from './Components/Footer/Footer';
+import { LoaderFunction } from 'remix';
 
 export default function Index() {
   return (
-  <>
-    <Hero />
-      <CTA />
-      <Box as="section" maxW="6xl" mx="auto" py="12" px={{ base: '6', md: '8' }}>
-        <SimpleGrid columns={[1, 1, 2]} spacing={8}>
-          <Center>
-          <GridItem>
-              <Heading as="h2" color="#0061FF" size="xl" fontWeight="extrabold" lineHeight="1.2">
-                .SNR
-                <Box as="span" ml="2" color="blackAlpha.800">
-                  Get your Sonr Registry Name
-                </Box>
-              </Heading>
-          </GridItem>
-          </Center>
-          <GridItem
-            maxW="xl"
-            overflowY="auto"
-            overflowX="hidden"
-          >
-            <Feature title="Secure by default" icon={<FcPrivacy />}>
-              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-              takimata sanctus.
-            </Feature>
-            <Feature title="Always up to date" icon={<FcTimeline />}>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore.
-            </Feature>
-            <Feature title="Incredible statistics" icon={<FcDoughnutChart />}>
-              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-              takimata sanctus.
-            </Feature>
-            <Feature title="Support for multiple devices" icon={<FcMultipleDevices />}>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore.
-            </Feature>
-          </GridItem>
-        </SimpleGrid>
-      </Box>
-      <Footer />
-    </>
+  <div className="mx-auto max-w-screen-xl px-4 py-8">
+    <div className="text-center">
+      <h1 className="text-3xl fsont-bold">
+        BoilerPlate
+      </h1>
+      <p className="text-xl">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod
+      </p>
+      <button className="bg-sonrBlue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Get Started
+      </button>
+    </div>
+  </div>
   );
 }
