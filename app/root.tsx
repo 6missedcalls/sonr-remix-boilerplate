@@ -19,6 +19,7 @@ export const meta: MetaFunction = () => {
     title: "Sonr Name Registration",
     description:
       "Sonr Name Registration is a decentralized name registration service that allows you to register your own name.",
+    keywords: "sonr, decentralized, blockchain",
   };
 };
 
