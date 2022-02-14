@@ -5,7 +5,7 @@
   "license": "",
   "scripts": {
     "build": "npm run build:css && remix build",
-    "build:css": "tailwindcss -o ./app/tailwind.css",
+    "build:css": "postcss ./app/Styles/input.css -o ./app/tailwind.css",
     "dev": "concurrently \"npm:dev:css\" \"remix dev\" \"npm:json-server\"",
     "dev:css": "tailwindcss -o ./app/tailwind.css --watch",
     "postinstall": "remix setup node",
@@ -29,7 +29,10 @@
     "@remix-run/dev": "^1.1.3",
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9",
+    "autoprefixer": "^10.4.2",
     "concurrently": "^7.0.0",
+    "postcss": "^8.4.6",
+    "postcss-cli": "^9.1.0",
     "tailwindcss": "^3.0.22",
     "typescript": "^4.1.2"
   },
