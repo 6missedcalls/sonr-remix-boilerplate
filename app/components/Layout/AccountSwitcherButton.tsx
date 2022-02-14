@@ -29,7 +29,7 @@ export const AccountSwitcherButton = (props: FlexProps) => {
           h="8"
           rounded="md"
           objectFit="cover"
-          src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzV8fG1hbiUyMHNpbWxpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=100"
+          src="https://pbs.twimg.com/profile_images/1486842260662763526/n9JmxReU_400x400.jpg"
           alt="Ian Perez"
         />
         <Box textAlign="start">
