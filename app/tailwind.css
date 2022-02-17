@@ -493,10 +493,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.25rem;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -532,6 +528,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.text-primary-snowWhite {
+  --tw-text-opacity: 1;
+  color: rgb(246 246 246 / var(--tw-text-opacity));
+}
+
+.text-primary-sonrBlue {
+  --tw-text-opacity: 1;
+  color: rgb(0 97 255 / var(--tw-text-opacity));
+}
+
+.text-primary-sonrBlue-900 {
+  --tw-text-opacity: 1;
+  color: rgb(0 12 31 / var(--tw-text-opacity));
+}
+
+.text-primary-sonrBlue-200 {
+  --tw-text-opacity: 1;
+  color: rgb(122 173 255 / var(--tw-text-opacity));
 }
 
 .underline {
